@@ -7,22 +7,27 @@ public class SpiceMustFlow_09 {
     Scanner scanner = new Scanner(System.in);
 
     int startYield = Integer.parseInt(scanner.nextLine());
-    int sum = 0;
-    int days = 0;
+    int totalSum = 0;
+    int daysCount = 0;
 
-        for (int i = startYield; i >= 100 ; i-=10) {
+        for (int i = startYield; i >= 100 ; i -= 10) {
             int extact = i;
-            sum += extact;
-            if (sum >= 26) {
-                sum -= 26;
-            }else {sum = 0;}
-            days++;
+            totalSum += extact;
+
+            if (totalSum >= 26) {
+                totalSum -= 26;
+            }else {
+                totalSum = 0;
+            }
+
+            daysCount++;
         }
 
+        if (totalSum >= 26) {
+            totalSum -= 26;
+        } else {
+            totalSum = 0;}
 
-        if (sum >= 26) {
-            sum -= 26;
-        }else {sum = 0;}
-        System.out.printf("%d%n%d",days,sum);
+        System.out.printf("%d%n%d", daysCount, totalSum);
     }
 }

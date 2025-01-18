@@ -11,8 +11,7 @@ public class SumOfChars_04 {
 
         for (int i = 1; i <= n ; i++) {
             char symbol = scanner.nextLine().charAt(0);
-            int asciiValue = (int) symbol;
-            sum += asciiValue;
+            sum += symbol;
         }
 
         System.out.printf("The sum equals: %d",sum);
