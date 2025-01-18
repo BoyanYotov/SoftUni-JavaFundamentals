@@ -14,6 +14,7 @@ public class Elevator_03 {
         if (courses == 0 || courses % 2 != 0){
             courses++;
         }
+
         System.out.println(courses);
     }
 }

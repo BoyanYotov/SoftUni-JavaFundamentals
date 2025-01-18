@@ -1,5 +1,7 @@
 package DataTypesAndVariables_02.Exercise;
 
+import java.util.Scanner;
+
 public class PrintPartOfASCIITable_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

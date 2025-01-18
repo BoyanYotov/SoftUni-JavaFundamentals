@@ -13,7 +13,7 @@ public class SumDigits_02 {
 
         for (int i = 1; i <= length ; i++) {
             int digit = number % 10;
-            sum +=digit;
+            sum += digit;
             number /= 10;
         }
 
