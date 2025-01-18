@@ -7,5 +7,14 @@ public class BeerKegs_08 {
         Scanner scanner = new Scanner(System.in);
 
 
+            double volume = Math.PI * Math.pow(radius,2) * height;
+
+            if (volume > maxVolume){
+                maxVolume = volume;
+                biggestModel = modelType;
+            }
+        }
+
+        System.out.printf("%s",biggestModel);
     }
 }
