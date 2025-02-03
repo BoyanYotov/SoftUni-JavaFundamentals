@@ -9,11 +9,14 @@ public class SumOfOddNumbers_09 {
         int input = Integer.parseInt(scanner.nextLine());
         int number = 1;
         int sum = 0;
-        for (int i = 1; i <= input ; i++) {
+
+        for (int i = 1; i <= input; i++) {
             System.out.println(number);
-            sum+=number;
-            number+=2;
+            sum += number;
+            number += 2;
         }
-        System.out.printf("Sum: %d",sum);
+        System.out.printf("Sum: %d", sum);
     }
 }
+
+

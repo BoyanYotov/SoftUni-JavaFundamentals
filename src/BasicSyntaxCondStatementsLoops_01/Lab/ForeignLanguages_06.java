@@ -15,6 +15,5 @@ public class ForeignLanguages_06 {
         } else {
             System.out.print("unknown");
         }
-
     }
 }

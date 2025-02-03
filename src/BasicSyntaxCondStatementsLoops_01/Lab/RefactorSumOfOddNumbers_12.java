@@ -14,6 +14,5 @@ public class RefactorSumOfOddNumbers_12 {
             sum += (2 * i + 1);
         }
         System.out.printf("Sum: %d", sum);
-
     }
 }

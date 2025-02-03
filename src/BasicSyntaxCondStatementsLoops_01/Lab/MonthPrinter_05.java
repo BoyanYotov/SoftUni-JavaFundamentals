@@ -22,7 +22,6 @@ public class MonthPrinter_05 {
             case 11 -> System.out.print("November");
             case 12 -> System.out.print("December");
             default -> System.out.print("Error!");
-
         }
     }
 }

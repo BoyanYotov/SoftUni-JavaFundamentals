@@ -9,10 +9,10 @@ public class TimeAfter30Minutes_04 {
         int hours = Integer.parseInt(scanner.nextLine());
         int minutes = Integer.parseInt(scanner.nextLine());
 
-        int timeInMinutes = (hours*60 + minutes) + 30;
+        int timeInMinutes = (hours * 60 + minutes) + 30;
 
         int newHours = timeInMinutes / 60;
-        if (newHours>=24){
+        if (newHours >= 24){
             newHours=0;
         }
         int newMinutes = timeInMinutes % 60;

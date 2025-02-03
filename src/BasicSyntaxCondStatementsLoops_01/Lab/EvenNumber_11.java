@@ -8,11 +8,10 @@ public class EvenNumber_11 {
 
         int number = Integer.parseInt(scanner.nextLine());
 
-        while (number%2!=0){
+        while (number % 2 != 0){
             System.out.println("Please write an even number.");
             number = Integer.parseInt(scanner.nextLine());
         }
-
         System.out.println("The number is: "+Math.abs(number));
     }
 }

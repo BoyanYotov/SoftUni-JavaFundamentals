@@ -11,7 +11,5 @@ public class StudentInformation_01 {
         double grade = Double.parseDouble(scanner.nextLine());
 
         System.out.printf("Name: %s, Age: %d, Grade: %.2f",name,age,grade);
-
-
     }
 }
