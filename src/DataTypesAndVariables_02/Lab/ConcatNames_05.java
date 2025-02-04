@@ -11,5 +11,6 @@ public class ConcatNames_05 {
         String deliminator = scanner.nextLine();
 
         System.out.print(name1 + deliminator + name2);
+
     }
 }

@@ -9,10 +9,8 @@ public class SortNumbers_01 {
         int n1 = Integer.parseInt(scanner.nextLine());
         int n2 = Integer.parseInt(scanner.nextLine());
         int n3 = Integer.parseInt(scanner.nextLine());
-        int biggestNumber = 0;
-        int middleNumber = 0;
-        int smallestNumber = 0;
 
+        int biggestNumber = 0;
         if (n1 >= n2 && n1 >= n3){
             biggestNumber = n1;
         }
@@ -23,6 +21,7 @@ public class SortNumbers_01 {
             biggestNumber = n3;
         }
 
+        int smallestNumber = 0;
         if (n1 <= n2 && n1 <= n3){
             smallestNumber = n1;
         }
@@ -33,6 +32,7 @@ public class SortNumbers_01 {
             smallestNumber = n3;
         }
 
+        int middleNumber = 0;
         middleNumber = (n1 + n2 + n3) - biggestNumber - smallestNumber;
 
         System.out.printf("%d%n%d%n%d",biggestNumber,middleNumber,smallestNumber);

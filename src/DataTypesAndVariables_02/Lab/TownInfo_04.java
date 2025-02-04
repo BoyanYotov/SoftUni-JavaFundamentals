@@ -7,8 +7,8 @@ public class TownInfo_04 {
         Scanner scanner = new Scanner(System.in);
 
         String townName = scanner.nextLine();
-        int population = Integer.parseInt(scanner.nextLine());
-        int area = Integer.parseInt(scanner.nextLine());
+        long population = Long.parseLong(scanner.nextLine());
+        long area = Long.parseLong(scanner.nextLine());
 
         System.out.printf("Town %s has population of %d and area %d square km.",townName,population,area);
     }

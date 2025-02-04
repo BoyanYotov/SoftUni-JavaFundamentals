@@ -10,7 +10,7 @@ public class ReversedChars_07 {
         char secondSymbol = scanner.nextLine().charAt(0);
         char thirdSymbol = scanner.nextLine().charAt(0);
 
-        String combination = ""+thirdSymbol+" "+secondSymbol+" "+firstSymbol;
+        String combination = "" + thirdSymbol + " " + secondSymbol + " " + firstSymbol;
         System.out.println(combination);
     }
 }

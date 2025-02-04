@@ -9,25 +9,27 @@ public class StrongNumber_06 {
         int initialNumber = Integer.parseInt(scanner.nextLine());
         int number = initialNumber;
 
-        int sumFactoral = 1;
-        int totalSum = 0;
+        int factorial = 1;
+        int factorialSum = 0;
 
-        while (number > 0) {
+        while (number > 0){
             int lastDigit = number % 10;
 
-            for (int i = lastDigit; i >= 1; i--) {
-                sumFactoral*=i;
+            for (int i = 1; i <= lastDigit ; i++) {
+                factorial *= i;
             }
 
-            totalSum += sumFactoral;
-            sumFactoral = 1;
+            factorialSum += factorial;
+            factorial = 1;
+
             number /= 10;
         }
 
-        if (totalSum == initialNumber){
+        if (factorialSum == initialNumber){
             System.out.println("yes");
         } else {
             System.out.println("no");
         }
+
     }
 }

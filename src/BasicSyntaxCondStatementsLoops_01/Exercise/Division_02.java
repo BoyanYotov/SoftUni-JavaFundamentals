@@ -8,6 +8,7 @@ public class Division_02 {
 
         int number = Integer.parseInt(scanner.nextLine());
         int maxDivisionNumber = 0;
+
         boolean isDivisible = false;
         
         if (number % 2 == 0){
@@ -40,6 +41,5 @@ public class Division_02 {
         } else {
             System.out.println("Not divisible");
         }
-
-        }
     }
+}

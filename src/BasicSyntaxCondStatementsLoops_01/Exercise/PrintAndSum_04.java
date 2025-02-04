@@ -12,7 +12,7 @@ public class PrintAndSum_04 {
 
         for (int i = startNumber; i <= endNumber ; i++) {
             System.out.print(i + " ");
-            sum+=i;
+            sum += i;
         }
         System.out.println();
         System.out.printf("Sum: %d",sum);

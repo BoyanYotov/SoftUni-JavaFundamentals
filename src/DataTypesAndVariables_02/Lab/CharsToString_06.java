@@ -10,7 +10,7 @@ public class CharsToString_06 {
         char secondSymbol = scanner.nextLine().charAt(0);
         char thirdSymbol = scanner.nextLine().charAt(0);
 
-        String combination = ""+firstSymbol+secondSymbol+thirdSymbol;
+        String combination = "" + firstSymbol + secondSymbol + thirdSymbol;
         System.out.println(combination);
     }
 }

@@ -42,20 +42,19 @@ public class Vacation_03 {
                 break;
         }
 
-        double totalPrice = pricePerPerson*numberOfPeople;
+        double totalPrice = pricePerPerson * numberOfPeople;
 
-        if (groupType.equals("Students") && (numberOfPeople>=30)){
-            totalPrice = totalPrice*0.85;
+        if (groupType.equals("Students") && (numberOfPeople >= 30)){
+            totalPrice = totalPrice * 0.85;
         }
 
-        if (groupType.equals("Business") && (numberOfPeople>=100)){
-            totalPrice = (totalPrice) - (10*pricePerPerson);
+        if (groupType.equals("Business") && (numberOfPeople >= 100)){
+            totalPrice = totalPrice - (10 * pricePerPerson);
         }
 
-        if (groupType.equals("Regular") && (numberOfPeople>10) && (numberOfPeople<=20)){
-            totalPrice = totalPrice*0.95;
+        if (groupType.equals("Regular") && (numberOfPeople > 10) && (numberOfPeople <= 20)){
+            totalPrice = totalPrice * 0.95;
         }
-
         System.out.printf("Total price: %.2f",totalPrice);
     }
 }

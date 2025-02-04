@@ -7,16 +7,17 @@ public class GamingStore_03 {
         Scanner scanner = new Scanner(System.in);
 
         double currentBalance = Double.parseDouble(scanner.nextLine());
-        double gamePrice = 0;
+
+        String command = scanner.nextLine();
         double totalSpent = 0;
-        String input = scanner.nextLine();
 
-        while (!input.equals("Game Time")){
+        while (!command.equals("Game Time")){
+            double gamePrice = 0;
 
-            switch (input){
+            switch (command){
                 case "OutFall 4":
-                    gamePrice = 39.99;
-                    break;
+                   gamePrice = 39.99;
+                   break;
                 case "CS: OG":
                     gamePrice = 15.99;
                     break;
@@ -34,29 +35,29 @@ public class GamingStore_03 {
                     break;
                 default:
                     System.out.println("Not Found");
-                    input = scanner.nextLine();
+                    command = scanner.nextLine();
                     continue;
             }
 
             if (gamePrice > currentBalance){
                 System.out.println("Too Expensive");
-                    input = scanner.nextLine();
-                    continue;
+                command = scanner.nextLine();
+                continue;
             }
 
+            System.out.printf("Bought %s%n",command);
             currentBalance -= gamePrice;
             totalSpent += gamePrice;
-            System.out.printf("Bought %s%n",input);
 
-            if (currentBalance == 0) {
-                System.out.print("Out of money!");
+            if (currentBalance <= 0){
+                System.out.println("Out of money!");
                 return;
             }
 
-            input = scanner.nextLine();
+            command = scanner.nextLine();
+
         }
 
         System.out.printf("Total spent: $%.2f. Remaining: $%.2f",totalSpent,currentBalance);
-
     }
 }

@@ -17,6 +17,5 @@ public class RefactorVolumeOfPyramid_11 {
 
         double volume = (length * width * height) / 3;
         System.out.printf("Pyramid Volume: %.2f", volume);
-
     }
 }

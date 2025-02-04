@@ -7,6 +7,7 @@ public class PoundsToDollars_02 {
         Scanner scanner = new Scanner(System.in);
 
         double gbp = Double.parseDouble(scanner.nextLine());
+
         double usd = gbp * 1.36;
 
         System.out.printf("%.3f",usd);

@@ -15,7 +15,6 @@ public class TriangleOfNumbers_08 {
             }
 
             System.out.println();
-
         }
     }
 }

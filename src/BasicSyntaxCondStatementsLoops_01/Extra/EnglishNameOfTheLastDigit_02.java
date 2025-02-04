@@ -20,8 +20,7 @@ public class EnglishNameOfTheLastDigit_02 {
             case 6 -> System.out.println("six");
             case 7 -> System.out.println("seven");
             case 8 -> System.out.println("eight");
-            case 9 -> System.out.println("ine");
+            case 9 -> System.out.println("nine");
         }
-
     }
 }

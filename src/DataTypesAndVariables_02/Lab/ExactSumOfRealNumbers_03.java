@@ -8,7 +8,7 @@ public class ExactSumOfRealNumbers_03 {
         Scanner scanner = new Scanner(System.in);
 
         int n = Integer.parseInt(scanner.nextLine());
-        BigDecimal sum = new BigDecimal(0);
+        BigDecimal sum = new BigDecimal("0");
 
         for (int i = 1; i <=n ; i++) {
             BigDecimal number = new BigDecimal(scanner.nextLine());

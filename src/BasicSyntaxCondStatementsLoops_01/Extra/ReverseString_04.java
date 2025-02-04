@@ -7,6 +7,7 @@ public class ReverseString_04 {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
+
         String reversedInput = "";
         char letter = 0;
 

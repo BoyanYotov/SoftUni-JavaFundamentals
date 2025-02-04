@@ -10,17 +10,17 @@ public class Orders_09 {
         double grandTotal = 0;
 
         for (int i = 1; i <= n ; i++) {
+
             double pricePerCapsule = Double.parseDouble(scanner.nextLine());
             int days = Integer.parseInt(scanner.nextLine());
             int capsuleCount = Integer.parseInt(scanner.nextLine());
 
             double total = ((days*capsuleCount) * pricePerCapsule);
-            grandTotal+=total;
+            grandTotal += total;
+
             System.out.printf("The price for the coffee is: $%.2f",total);
             System.out.println();
         }
-
-
         System.out.printf("Total: $%.2f",grandTotal);
     }
 }
