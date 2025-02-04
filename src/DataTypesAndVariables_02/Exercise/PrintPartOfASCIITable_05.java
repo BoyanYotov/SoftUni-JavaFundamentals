@@ -14,6 +14,5 @@ public class PrintPartOfASCIITable_05 {
 
             System.out.print(symbol + " ");
         }
-
     }
 }

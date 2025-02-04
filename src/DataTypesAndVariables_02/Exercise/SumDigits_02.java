@@ -1,6 +1,9 @@
 package DataTypesAndVariables_02.Exercise;
 
+import javax.management.StringValueExp;
 import java.util.Scanner;
+
+import static java.lang.Integer.*;
 
 public class SumDigits_02 {
     public static void main(String[] args) {

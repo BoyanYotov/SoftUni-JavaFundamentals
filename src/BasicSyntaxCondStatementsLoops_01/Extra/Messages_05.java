@@ -7,31 +7,25 @@ public class Messages_05 {
         Scanner scanner = new Scanner(System.in);
 
         int n = Integer.parseInt(scanner.nextLine());
-        int offset = 0;
 
         for (int i = 1; i <= n ; i++) {
-
             String input = scanner.nextLine();
             int length = input.length();
-            int number = Integer.parseInt(input);
-            int mainDigit = number % 10;
+            int mainDigit = Integer.parseInt(input) % 10;
 
-            offset = (mainDigit - 2) * 3;
+            int offset = (mainDigit - 2) * 3;
 
             if (mainDigit == 8 || mainDigit == 9){
-                offset += 1;
+                offset++;
             }
 
-            int index = (offset + length - 1) + 97;
+            int index = (offset + length-1);
+            int finalLetter = index + 97;
 
-            if (mainDigit == 0){
-                index = 32;
+            if (finalLetter == 91){
+                finalLetter = 32;
             }
-
-            char letter = (char) index;
-
-            System.out.print(letter);
-
+            System.out.print((char) finalLetter);
         }
 
     }
