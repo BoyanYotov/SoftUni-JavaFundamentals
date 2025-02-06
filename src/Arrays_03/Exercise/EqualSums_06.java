@@ -7,44 +7,41 @@ public class EqualSums_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int[] array = Arrays.stream(scanner.nextLine()
+        int[] numbers = Arrays.
+                        stream(scanner.nextLine()
                         .split(" "))
-                .mapToInt(Integer::parseInt)
-                .toArray();
-
+                        .mapToInt(Integer::parseInt)
+                        .toArray();
 
         boolean isFound = false;
 
-        for (int index = 0; index <= array.length - 1; index++) {
+        for (int i = 0; i <= numbers.length - 1 ; i++) {
 
-            if (array.length == 1){
+            if (numbers.length == 1){
+                System.out.println("0");
                 break;
             }
+            int element = numbers[i];
+            int leftSum = 0;
+            int rightSum = 0;
 
-            int sumLeft = 0;
-            int sumRight = 0;
 
-            for (int i = 0; i <= index - 1; i++) {
-                int rightDigit = array[i];
-                sumRight += rightDigit;
+            for (int leftposition = 0; leftposition < i; leftposition++) {
+                leftSum += numbers[leftposition];
             }
 
-            for (int j = index + 1; j <= array.length - 1; j++) {
-                int leftDigit = array[j];
-                sumLeft += leftDigit;
+            for (int rightposition = i + 1; rightposition <= numbers.length - 1 ; rightposition++) {
+                rightSum += numbers[rightposition];
             }
 
-
-            if (sumRight == sumLeft) {
-                System.out.println(index);
+            if (rightSum == leftSum){
                 isFound = true;
+                System.out.println(i);
             }
         }
 
-        if (!isFound && array.length > 1){
+        if (!isFound && numbers.length > 1){
             System.out.println("no");
-        } else if (array.length == 1)
-            System.out.println("0");
         }
     }
-
+}

@@ -3,7 +3,7 @@ package Arrays_03.Exercise;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MagicSum_08 {
+public class TopInteger_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -13,18 +13,22 @@ public class MagicSum_08 {
                         .mapToInt(Integer::parseInt)
                         .toArray();
 
-        int magicNumber = Integer.parseInt(scanner.nextLine());
-
         for (int i = 0; i <= numbers.length - 1 ; i++) {
             int firstNumber = numbers[i];
+            boolean isTop = true;
 
-            for (int j = i + 1; j <= numbers.length - 1 ; j++) {
-                int secondNumber = numbers[j];
+            for (int j = i + 1 ; j <= numbers.length - 1 ; j++) {
+            int secondNumber = numbers[j];
 
-                if (firstNumber + secondNumber == magicNumber){
-                    System.out.println(firstNumber + " " + secondNumber);
+            if (firstNumber <= secondNumber){
+                isTop = false;
                 }
             }
+
+            if (isTop){
+                System.out.print(firstNumber + " ");
+            }
+
         }
     }
 }

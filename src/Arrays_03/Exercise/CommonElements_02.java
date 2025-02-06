@@ -10,12 +10,12 @@ public class CommonElements_02 {
         String[] secondArray = scanner.nextLine().split(" ");
 
         for (int i = 0; i <= secondArray.length - 1 ; i++) {
-            String word = secondArray[i];
+            String firstElement = secondArray[i];
 
             for (int j = 0; j <= firstArray.length - 1 ; j++) {
 
-                if (word.equals(firstArray[j])){
-                    System.out.print(word + " ");
+                if (firstElement.equals(firstArray[j])){
+                    System.out.print(firstElement + " ");
                 }
             }
         }
