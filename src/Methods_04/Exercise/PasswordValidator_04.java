@@ -8,33 +8,31 @@ public class PasswordValidator_04 {
 
         String password = scanner.nextLine();
 
-        if (!checkIfPasswordLengthIsValid(password)){
+        boolean validatePasswordLength = validatePasswordLength(password);
+        boolean validateOnlyLettersAndDigits = validateOnlyLettersAndDigits(password);
+        boolean validateAtLeast2Digits = validateAtLeast2Digits(password);
+
+        if (!validatePasswordLength){
             System.out.println("Password must be between 6 and 10 characters");
         }
-
-        if (!checkIfPasswordContainsOnlyDigitsAndNumbers(password)){
+        if (!validateOnlyLettersAndDigits){
             System.out.println("Password must consist only of letters and digits");
         }
-
-        if (!checkIfAtLeastTwoDigits(password)){
+        if (!validateAtLeast2Digits){
             System.out.println("Password must have at least 2 digits");
         }
 
-        if (checkIfPasswordContainsOnlyDigitsAndNumbers(password) && checkIfAtLeastTwoDigits(password)
-                && checkIfAtLeastTwoDigits(password)){
+        if (validatePasswordLength && validateAtLeast2Digits && validateOnlyLettersAndDigits){
             System.out.println("Password is valid");
         }
     }
 
-    private static boolean checkIfPasswordLengthIsValid (String text){
-        if (text.length() >= 6 && text.length() <= 10){
-            return true;
-        }
-        return false;
+    private static boolean validatePasswordLength(String pass){
+        return pass.length() >= 6 && pass.length() <= 10;
     }
 
-    private static boolean checkIfPasswordContainsOnlyDigitsAndNumbers(String text){
-        for (char symbol : text.toCharArray()){
+    private static boolean validateOnlyLettersAndDigits (String pass){
+        for (char symbol : pass.toCharArray()){
             if (!Character.isLetterOrDigit(symbol)){
                 return false;
             }
@@ -42,18 +40,13 @@ public class PasswordValidator_04 {
         return true;
     }
 
-    private static boolean checkIfAtLeastTwoDigits(String text){
+    private static boolean validateAtLeast2Digits (String pass){
         int count = 0;
-        for (int i = 0; i <= text.length() -1 ; i++) {
-            if (Character.isDigit(text.charAt(i))) {
+        for (char symbol : pass.toCharArray()){
+            if (Character.isDigit(symbol)){
                 count++;
             }
-
-            if (count >= 2){
-                return true;
-            }
         }
-        return false;
+        return count >= 2;
     }
-
 }
