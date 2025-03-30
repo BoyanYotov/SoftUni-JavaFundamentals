@@ -1,6 +1,5 @@
 package Methods_04.Exercise;
 
-import java.sql.PreparedStatement;
 import java.util.Scanner;
 
 public class FactorialDivision_08 {
@@ -14,13 +13,13 @@ public class FactorialDivision_08 {
         long secondFactorial = calculateFactorial(secondNumber);
 
         double result = firstFactorial / (secondFactorial * 1.0);
-        System.out.printf ("%.2f",result);
+        System.out.printf("%.2f", result);
     }
 
-    private static long calculateFactorial(int a){
+    private static long calculateFactorial(int a) {
         long factorial = 1;
 
-        for (int i = 2; i <= a ; i++) {
+        for (int i = 2; i <= a; i++) {
             factorial *= i;
         }
 

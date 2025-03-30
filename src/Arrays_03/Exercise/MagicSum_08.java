@@ -8,20 +8,20 @@ public class MagicSum_08 {
         Scanner scanner = new Scanner(System.in);
 
         int[] numbers = Arrays.
-                        stream(scanner.nextLine()
+                stream(scanner.nextLine()
                         .split(" "))
-                        .mapToInt(Integer::parseInt)
-                        .toArray();
+                .mapToInt(Integer::parseInt)
+                .toArray();
 
         int magicNumber = Integer.parseInt(scanner.nextLine());
 
-        for (int i = 0; i <= numbers.length - 1 ; i++) {
+        for (int i = 0; i <= numbers.length - 1; i++) {
             int firstNumber = numbers[i];
 
-            for (int j = i + 1; j <= numbers.length - 1 ; j++) {
+            for (int j = i + 1; j <= numbers.length - 1; j++) {
                 int secondNumber = numbers[j];
 
-                if (firstNumber + secondNumber == magicNumber){
+                if (firstNumber + secondNumber == magicNumber) {
                     System.out.println(firstNumber + " " + secondNumber);
                 }
             }

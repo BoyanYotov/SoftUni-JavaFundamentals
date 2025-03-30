@@ -8,16 +8,16 @@ public class EqualSums_06 {
         Scanner scanner = new Scanner(System.in);
 
         int[] numbers = Arrays.
-                        stream(scanner.nextLine()
+                stream(scanner.nextLine()
                         .split(" "))
-                        .mapToInt(Integer::parseInt)
-                        .toArray();
+                .mapToInt(Integer::parseInt)
+                .toArray();
 
         boolean isFound = false;
 
-        for (int i = 0; i <= numbers.length - 1 ; i++) {
+        for (int i = 0; i <= numbers.length - 1; i++) {
 
-            if (numbers.length == 1){
+            if (numbers.length == 1) {
                 System.out.println("0");
                 break;
             }
@@ -30,17 +30,17 @@ public class EqualSums_06 {
                 leftSum += numbers[leftposition];
             }
 
-            for (int rightposition = i + 1; rightposition <= numbers.length - 1 ; rightposition++) {
+            for (int rightposition = i + 1; rightposition <= numbers.length - 1; rightposition++) {
                 rightSum += numbers[rightposition];
             }
 
-            if (rightSum == leftSum){
+            if (rightSum == leftSum) {
                 isFound = true;
                 System.out.println(i);
             }
         }
 
-        if (!isFound && numbers.length > 1){
+        if (!isFound && numbers.length > 1) {
             System.out.println("no");
         }
     }

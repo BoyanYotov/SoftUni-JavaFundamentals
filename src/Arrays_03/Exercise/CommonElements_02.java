@@ -9,12 +9,12 @@ public class CommonElements_02 {
         String[] firstArray = scanner.nextLine().split(" ");
         String[] secondArray = scanner.nextLine().split(" ");
 
-        for (int i = 0; i <= secondArray.length - 1 ; i++) {
+        for (int i = 0; i <= secondArray.length - 1; i++) {
             String firstElement = secondArray[i];
 
-            for (int j = 0; j <= firstArray.length - 1 ; j++) {
+            for (int j = 0; j <= firstArray.length - 1; j++) {
 
-                if (firstElement.equals(firstArray[j])){
+                if (firstElement.equals(firstArray[j])) {
                     System.out.print(firstElement + " ");
                 }
             }

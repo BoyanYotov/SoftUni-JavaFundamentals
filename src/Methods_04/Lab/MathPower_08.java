@@ -9,10 +9,11 @@ public class MathPower_08 {
         int a = Integer.parseInt(scanner.nextLine());
         int b = Integer.parseInt(scanner.nextLine());
 
-        System.out.printf("%.0f",returnPower(a,b));
+        System.out.printf("%.0f", returnPower(a, b));
     }
-    private static double returnPower (int a, int b){
-        double result = Math.pow(a,b);
+
+    private static double returnPower(int a, int b) {
+        double result = Math.pow(a, b);
         return result;
     }
 }

@@ -8,7 +8,7 @@ public class TopNumber_10 {
 
         int number = Integer.parseInt(scanner.nextLine());
 
-        for (int i = 1; i <= number ; i++) {
+        for (int i = 1; i <= number; i++) {
 
             if (checkIfDivisibleByEight(i) && checkIfHasOneOddDigit(i)) {
                 System.out.println(i);
@@ -16,9 +16,9 @@ public class TopNumber_10 {
         }
     }
 
-    private static boolean checkIfDivisibleByEight(int a){
+    private static boolean checkIfDivisibleByEight(int a) {
         int sum = 0;
-        while (a > 0 ){
+        while (a > 0) {
             int lastDigit = a % 10;
             sum += lastDigit;
             a /= 10;
@@ -27,11 +27,11 @@ public class TopNumber_10 {
         return (sum % 8 == 0);
     }
 
-    private static boolean checkIfHasOneOddDigit(int a){
-        while (a > 0 ){
+    private static boolean checkIfHasOneOddDigit(int a) {
+        while (a > 0) {
             int lastDigit = a % 10;
 
-            if (lastDigit % 2 != 0){
+            if (lastDigit % 2 != 0) {
                 return true;
             }
             a /= 10;

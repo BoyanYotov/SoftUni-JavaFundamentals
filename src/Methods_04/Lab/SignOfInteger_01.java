@@ -12,12 +12,12 @@ public class SignOfInteger_01 {
 
     }
 
-    private static void printSignOfNumber(int number){
-        if (number > 0){
-            System.out.printf("The number %d is positive.",number);
-        } else if (number < 0){
-            System.out.printf("The number %d is negative.",number);
-        } else if (number == 0){
+    private static void printSignOfNumber(int number) {
+        if (number > 0) {
+            System.out.printf("The number %d is positive.", number);
+        } else if (number < 0) {
+            System.out.printf("The number %d is negative.", number);
+        } else if (number == 0) {
             System.out.print("The number 0 is zero.");
         }
     }

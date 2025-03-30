@@ -13,12 +13,12 @@ public class BonusScoringSystem_01 {
         double maxBonus = 0;
         int maxAttendances = 0;
 
-        for (int i = 1; i <= students ; i++) {
+        for (int i = 1; i <= students; i++) {
             int attendances = Integer.parseInt(scanner.nextLine());
 
-            double totalBonus = (attendances *1.0 / lectures) * (5 + additionalBonus);
+            double totalBonus = (attendances * 1.0 / lectures) * (5 + additionalBonus);
 
-            if (totalBonus > maxBonus){
+            if (totalBonus > maxBonus) {
                 maxBonus = totalBonus;
                 maxAttendances = attendances;
             }

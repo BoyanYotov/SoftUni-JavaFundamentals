@@ -11,12 +11,12 @@ public class VowelsCountV1_02 {
 
     }
 
-    private static void printVowelsCount(String input){
+    private static void printVowelsCount(String input) {
         int vowelsCount = 0;
-        for (int i = 0; i <= input.length() - 1 ; i++) {
+        for (int i = 0; i <= input.length() - 1; i++) {
             char letter = Character.toLowerCase(input.charAt(i));
 
-            switch (letter){
+            switch (letter) {
                 case 'a' -> vowelsCount++;
                 case 'o' -> vowelsCount++;
                 case 'u' -> vowelsCount++;
