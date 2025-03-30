@@ -10,16 +10,16 @@ public class MiddleCharacters_06 {
         printMiddleCharacter(input);
     }
 
-    private static void printMiddleCharacter(String text){
-        if (text.length() % 2 == 0){
-            char[] middles = {text.charAt(text.length()/2 - 1), text.charAt(text.length()/2)};
+    private static void printMiddleCharacter(String text) {
+        if (text.length() % 2 == 0) {
+            char[] middles = {text.charAt(text.length() / 2 - 1), text.charAt(text.length() / 2)};
 
-            for (int i = 0; i <= middles.length - 1 ; i++) {
+            for (int i = 0; i <= middles.length - 1; i++) {
                 System.out.print(middles[i]);
             }
 
         } else {
-            char middle = text.charAt(text.length()/2);
+            char middle = text.charAt(text.length() / 2);
             System.out.println(middle);
         }
     }

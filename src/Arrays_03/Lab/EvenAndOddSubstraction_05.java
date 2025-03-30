@@ -12,8 +12,8 @@ public class EvenAndOddSubstraction_05 {
         int sumEven = 0;
         int sumOdd = 0;
 
-        for (int i = 0; i <= numbers.length - 1 ; i++) {
-            if (numbers[i] % 2 == 0){
+        for (int i = 0; i <= numbers.length - 1; i++) {
+            if (numbers[i] % 2 == 0) {
                 sumEven += numbers[i];
             } else {
                 sumOdd += numbers[i];

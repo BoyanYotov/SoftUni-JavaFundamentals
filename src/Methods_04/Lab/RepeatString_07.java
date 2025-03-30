@@ -8,13 +8,13 @@ public class RepeatString_07 {
 
         String input = scanner.nextLine();
         int repetitions = Integer.parseInt(scanner.nextLine());
-        String formattedInput = repeatedText(input,repetitions);
+        String formattedInput = repeatedText(input, repetitions);
         System.out.println(formattedInput);
     }
 
-    private static String repeatedText(String input, int n){
+    private static String repeatedText(String input, int n) {
         String repeatedText = "";
-        for (int i = 1; i <= n ; i++) {
+        for (int i = 1; i <= n; i++) {
             repeatedText += input;
         }
         return repeatedText;

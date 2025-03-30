@@ -14,12 +14,12 @@ public class AddAndSubtract_05 {
         System.out.println(result);
     }
 
-    private static int ResultOfAllNumbers(int a, int b, int c){
+    private static int ResultOfAllNumbers(int a, int b, int c) {
         int sum = a + b;
-        return subtractThirdNumbers(sum,c);
+        return subtractThirdNumbers(sum, c);
     }
 
-    private static int subtractThirdNumbers (int sum, int c){
+    private static int subtractThirdNumbers(int sum, int c) {
         return sum - c;
     }
 }

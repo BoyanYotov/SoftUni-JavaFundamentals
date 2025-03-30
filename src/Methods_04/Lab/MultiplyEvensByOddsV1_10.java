@@ -10,15 +10,15 @@ public class MultiplyEvensByOddsV1_10 {
         System.out.println(getMultipleOfEvensAndOdds(number));
     }
 
-    private static int getMultipleOfEvensAndOdds(int number){
+    private static int getMultipleOfEvensAndOdds(int number) {
         int sumEven = 0;
         int sumOdd = 0;
 
-        while (number > Integer.MIN_VALUE){
+        while (number > Integer.MIN_VALUE) {
 
             int lastDigit = number % 10;
 
-            if (lastDigit % 2 == 0){
+            if (lastDigit % 2 == 0) {
                 sumEven += lastDigit;
             } else {
                 sumOdd += lastDigit;
@@ -26,7 +26,7 @@ public class MultiplyEvensByOddsV1_10 {
 
             number /= 10;
 
-            if (number == 0){
+            if (number == 0) {
                 break;
             }
         }

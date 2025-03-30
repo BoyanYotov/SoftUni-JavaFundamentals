@@ -11,18 +11,18 @@ public class ZigZagArrays_03 {
         int[] firstArray = new int[n];
         int[] secondArray = new int[n];
 
-        for (int i = 1; i <= n ; i++) {
+        for (int i = 1; i <= n; i++) {
             String input = scanner.nextLine();
 
-        int firstNumber = Integer.parseInt(input.split(" ")[0]);
-        int secondNumber = Integer.parseInt(input.split(" ")[1]);
+            int firstNumber = Integer.parseInt(input.split(" ")[0]);
+            int secondNumber = Integer.parseInt(input.split(" ")[1]);
 
-            if (i % 2 != 0){
-                firstArray[i-1] = firstNumber;
-                secondArray[i-1] = secondNumber;
+            if (i % 2 != 0) {
+                firstArray[i - 1] = firstNumber;
+                secondArray[i - 1] = secondNumber;
             } else {
-                firstArray[i-1] = secondNumber;
-                secondArray[i-1] = firstNumber;
+                firstArray[i - 1] = secondNumber;
+                secondArray[i - 1] = firstNumber;
             }
         }
 

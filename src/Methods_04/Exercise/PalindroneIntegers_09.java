@@ -8,7 +8,7 @@ public class PalindroneIntegers_09 {
 
         String command = scanner.nextLine();
 
-        while (!command.equals("END")){
+        while (!command.equals("END")) {
 
             boolean isPalindrome = getPalindromeValue(command);
 
@@ -19,9 +19,9 @@ public class PalindroneIntegers_09 {
 
     }
 
-    private static boolean getPalindromeValue(String text){
+    private static boolean getPalindromeValue(String text) {
         String palindrone = "";
-        for (int i = text.length()-1; i >= 0 ; i--) {
+        for (int i = text.length() - 1; i >= 0; i--) {
             char letter = text.charAt(i);
             palindrone += letter;
         }

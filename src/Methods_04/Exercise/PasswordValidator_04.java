@@ -12,38 +12,38 @@ public class PasswordValidator_04 {
         boolean validateOnlyLettersAndDigits = validateOnlyLettersAndDigits(password);
         boolean validateAtLeast2Digits = validateAtLeast2Digits(password);
 
-        if (!validatePasswordLength){
+        if (!validatePasswordLength) {
             System.out.println("Password must be between 6 and 10 characters");
         }
-        if (!validateOnlyLettersAndDigits){
+        if (!validateOnlyLettersAndDigits) {
             System.out.println("Password must consist only of letters and digits");
         }
-        if (!validateAtLeast2Digits){
+        if (!validateAtLeast2Digits) {
             System.out.println("Password must have at least 2 digits");
         }
 
-        if (validatePasswordLength && validateAtLeast2Digits && validateOnlyLettersAndDigits){
+        if (validatePasswordLength && validateAtLeast2Digits && validateOnlyLettersAndDigits) {
             System.out.println("Password is valid");
         }
     }
 
-    private static boolean validatePasswordLength(String pass){
+    private static boolean validatePasswordLength(String pass) {
         return pass.length() >= 6 && pass.length() <= 10;
     }
 
-    private static boolean validateOnlyLettersAndDigits (String pass){
-        for (char symbol : pass.toCharArray()){
-            if (!Character.isLetterOrDigit(symbol)){
+    private static boolean validateOnlyLettersAndDigits(String pass) {
+        for (char symbol : pass.toCharArray()) {
+            if (!Character.isLetterOrDigit(symbol)) {
                 return false;
             }
         }
         return true;
     }
 
-    private static boolean validateAtLeast2Digits (String pass){
+    private static boolean validateAtLeast2Digits(String pass) {
         int count = 0;
-        for (char symbol : pass.toCharArray()){
-            if (Character.isDigit(symbol)){
+        for (char symbol : pass.toCharArray()) {
+            if (Character.isDigit(symbol)) {
                 count++;
             }
         }

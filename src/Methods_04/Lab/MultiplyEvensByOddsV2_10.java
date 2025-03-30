@@ -7,20 +7,20 @@ public class MultiplyEvensByOddsV2_10 {
         Scanner scanner = new Scanner(System.in);
 
         int number = Integer.parseInt(scanner.nextLine());
-        int [] sums = getMultiplyEvensAndOdds(Math.abs(number));
+        int[] sums = getMultiplyEvensAndOdds(Math.abs(number));
 
         System.out.println(sums[0] * sums[1]);
     }
 
-    private static int[] getMultiplyEvensAndOdds (int number){
+    private static int[] getMultiplyEvensAndOdds(int number) {
 
         int sumEven = 0;
         int sumOdd = 0;
 
-        while (number > 0){
+        while (number > 0) {
             int lastDigit = number % 10;
 
-            if (lastDigit % 2 == 0){
+            if (lastDigit % 2 == 0) {
                 sumEven += lastDigit;
             } else {
                 sumOdd += lastDigit;
@@ -29,6 +29,6 @@ public class MultiplyEvensByOddsV2_10 {
             number /= 10;
         }
 
-        return new int[] {sumOdd, sumEven};
+        return new int[]{sumOdd, sumEven};
     }
 }

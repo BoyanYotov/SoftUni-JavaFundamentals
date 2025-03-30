@@ -9,15 +9,16 @@ public class Orders_05 {
         String product = scanner.nextLine();
         int quantity = Integer.parseInt(scanner.nextLine());
 
-        printOrderTotal(product,quantity);
+        printOrderTotal(product, quantity);
 
     }
-    public static void printOrderTotal(String item, int qty){
-        switch (item){
-            case "coffee" -> System.out.printf("%.2f",qty * 1.5);
-            case "water" -> System.out.printf("%.2f",qty * 1.00);
-            case "coke" -> System.out.printf("%.2f",qty * 1.4);
-            case "snacks" -> System.out.printf("%.2f",qty * 2.00);
+
+    public static void printOrderTotal(String item, int qty) {
+        switch (item) {
+            case "coffee" -> System.out.printf("%.2f", qty * 1.5);
+            case "water" -> System.out.printf("%.2f", qty * 1.00);
+            case "coke" -> System.out.printf("%.2f", qty * 1.4);
+            case "snacks" -> System.out.printf("%.2f", qty * 2.00);
         }
     }
 
